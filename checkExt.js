@@ -13,7 +13,7 @@ module.exports = function checkExt(directory, extension, callback) {
             for (let e of list) {
                 if (e.indexOf(".") > -1 && e.split('.').pop() === extension) results.push(e);
             }
-            callback(false, results);
+            callback(null, results);
         }
     });
 }
